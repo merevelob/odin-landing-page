@@ -5,7 +5,12 @@
     --btn-color: #3882F6;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Pacifico';
+    src: local('Pacifico'), url('./fonts/Pacifico-Regular.ttf');
+ }
 
 html {
     box-sizing: border-box;
@@ -18,7 +23,17 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    /*  */
+}
+
+button {
+    padding: 8px 32px;
+    border: 2px solid var(--lt-color);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--lt-color);
+    background-color: var(--btn-color);
 }
 
 /* HEADER VIEW */
@@ -26,15 +41,18 @@ header {
     height: 100vh;
     background-color: var(--dk-color);
 }
+
+nav, .intro {
+    max-width: 1000px;
+    margin: auto;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
 /* Nav bar */
 nav {
     height: 64px;
-    max-width: 700px;
-    margin: auto;
-    padding: 8px;
-    background-color: rgba(0, 255, 255, 0.555);
-    display: flex;
-    align-items: center;
 }
 
 .logo {
@@ -46,7 +64,7 @@ nav {
 }
 
 .logo span {
-    /* font-family: 'Tilt Prism', cursive; */
+    font-family: 'Pacifico', cursive;
     font-size: 24px;
     color: var(--lt-color);
 }
@@ -58,6 +76,52 @@ nav {
 }
 
 a {
+    font-size: 18px;
     text-decoration: none;
     color: var(--second-color);
+}
+/* Intro */
+.intro-view {
+    height: calc(100vh - 64px);
+    display: flex;
+}
+
+.intro {
+    gap: 32px;
+}
+
+.intro > * {
+    max-width: 50%;
+}
+
+.intro-text {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--lt-color);
+}
+
+.intro-text p {
+    font-size: 18px;
+    color: var(--second-color);
+}
+
+.intro-text button {
+    width: fit-content;
+    border: none;
+}
+/**/
+.intro-img {
+    display: flex;
+}
+
+.intro-img img {
+    margin: auto;
+    width: 100%;
 }
