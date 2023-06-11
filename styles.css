@@ -1,3 +1,4 @@
+/* Colour variables */
 :root {
     --dk-color: #1F2937;
     --lt-color: #F9FAF8;
@@ -5,6 +6,7 @@
     --btn-color: #3882F6;
 }
 
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 @font-face {
@@ -12,6 +14,7 @@
     src: local('Pacifico'), url('./fonts/Pacifico-Regular.ttf');
  }
 
+/* General Rules */
 html {
     box-sizing: border-box;
 }
@@ -39,11 +42,12 @@ button {
 /* HEADER VIEW */
 header {
     height: 100vh;
+    padding: 0 24px 24px;
     background-color: var(--dk-color);
 }
 
 nav, .intro {
-    max-width: 1000px;
+    max-width: 1080px;
     margin: auto;
     padding: 8px;
     display: flex;
@@ -80,6 +84,7 @@ a {
     text-decoration: none;
     color: var(--second-color);
 }
+
 /* Intro */
 .intro-view {
     height: calc(100vh - 64px);
@@ -125,3 +130,71 @@ a {
     margin: auto;
     width: 100%;
 }
+
+/* BREEDS */
+.breeds-view {
+    min-height: 100vh;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lt-color);
+    justify-content: center;
+    gap: 40px;
+}
+
+.breeds-view > * {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.breeds-view h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--dk-color);
+}
+/**/
+.breeds {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.breed {
+    width: 240px;
+}
+
+.img-cont {
+    height: 240px;
+}
+
+.breed img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid var(--btn-color);
+    border-radius: 16px;
+}
+
+.breed:nth-child(2) img {
+    object-position: 100% 0;
+}
+
+.breed:nth-child(3) img {
+    object-position: 40% 0;
+}
+
+.breed:last-child img {
+    object-position: 15% 0;
+}
+
+.img-text {
+    text-align: center;
+    font-size: 18px;
+    color: var(--dk-color);
+    padding: 4px;
+    margin-top: 4px;
+}
+
+/**/
