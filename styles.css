@@ -1,0 +1,28 @@
+:root {
+    --dk-color: #1F2937;
+    --lt-color: #F9FAF8;
+    --quote-color: #E5E7EB;
+    --btn-color: #3882F6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Tilt+Prism&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Tilt Prism', cursive; */
+}
+
+/* HEADER VIEW */
+header {
+    height: 100vh;
+    background-color: var(--dk-color);
+}
