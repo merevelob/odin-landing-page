@@ -225,4 +225,53 @@ figcaption {
     text-align: right;
 }
 
+/* SIGN UP & FOOTER */
+.signup-view {
+    min-height: calc(100vh - 64px);
+    padding: 24px;
+    background-color: var(--lt-color);
+    display: flex;
+}
+
+.signup-cont {
+    max-width: 1080px;
+    min-height: 160px;
+    padding: 8px;
+    margin: auto;
+    background-color: var(--btn-color);
+    border-radius: 16px;
+    flex: 1;
+    display: flex;
+}
+
+.signup-text {
+    color: var(--lt-color);
+    margin: auto;
+}
+
+.signup-text h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.signup-text p {
+    font-size: 18px;
+}
+
+.signup-cont button {
+    height: fit-content;
+    margin: auto;
+}
 /**/
+footer {
+    height: 64px;
+    padding: 8px 32px;
+    display: flex;
+    background-color: var(--dk-color);
+}
+
+footer span {
+    margin: auto;
+    font-size: 18px;
+    color: var(--second-color);
+}
