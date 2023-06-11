@@ -6,6 +6,9 @@ This is a project intended to practice HTML and CSS skills (particularly Flexbox
 Credits:
 <ul>
     <li>
+        Dog icon created by <a href="https://www.flaticon.com/free-icons/dog" title="dog icons">Freepik - Flaticon</a>
+    </li>
+    <li>
         Intro paragraph taken from <a href="https://www.rover.com/blog/dogs-called-mans-best-friend/">The Dog People</a>
     </li>
     <li>
