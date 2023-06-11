@@ -197,4 +197,32 @@ a {
     margin-top: 4px;
 }
 
+/* QUOTE */
+.quote-view {
+    min-height: 100vh;
+    padding: 24px;
+    display: flex;
+    background-color: var(--second-color);
+}
+
+.quote-cont {
+    max-width: 1080px;
+    padding: 8px;
+    margin: auto;
+    color: var(--dk-color);
+}
+
+blockquote p {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    margin-bottom: 32px;
+}
+
+figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
 /**/
