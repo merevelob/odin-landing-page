@@ -274,4 +274,11 @@ footer span {
     margin: auto;
     font-size: 18px;
     color: var(--second-color);
+    display: flex;
+}
+
+footer img {
+    height: 20px;
+    width: auto;
+    margin: auto 4px;
 }
